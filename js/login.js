@@ -38,6 +38,38 @@ $(function(){
             data:fd,
             success:function(res){
                console.log(res.message);
+            // console.log(res);
+            // 当注册成功的时候自动跳转到登录页面
+            if(res.status!==0){
+                $('.log_reg').show()
+                $('.log_login').hide()
+            }else{
+                $('.log_reg').hide()
+                $('.log_login').show()
+            }
+            }
+        })
+    })
+
+
+    // 进行登录跳转到index页面
+    $('#formlog').on('submit',function(e){
+        e.preventDefault()
+        let fd =$(this).serialize()
+        $.ajax({
+            url:'http://ajax.frontend.itheima.net/api/login',
+            method:'POST',
+            data:fd,
+            success:function(res){
+                // console.log(res);
+                // 如果成功进行跳转 并将数据保存到本地
+                if(res.status !==0){
+                    return
+                }else{
+                    location.href='/index.html'
+                    // 并保存数据
+                    localStorage.setItem('token',res.token)
+                }
             }
         })
     })

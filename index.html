@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <!-- 引入layui 的css-->
+  <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+  <!-- 引入自己的 cs -->
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">
+        <img src="/assets/images/logo.png" alt="">
+      </div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href="javascript:;">
+            <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+            <span class="text">A</span>
+            <i class="layui-icon layui-icon-face-smile" style="font-size: 20px; color: #1E9FFF;"></i>个人中心
+          </a>
+            <dl class="layui-nav-child">
+             
+              <dd><a href="">头像设置</a></dd>
+              <dd><a href="">个人资料</a></dd>
+              <dd><a href="">密码安全</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item"><a href=""><i class="layui-icon layui-icon-face-smile"
+              style="font-size: 20px; color: #1E9FFF;"></i> 退出</a></li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item heig"> <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+            <span class="text">A</span>
+            <span class="welcom">欢迎XXX</span>
+          </li>
+          <li class="layui-nav-item layui-this"><a href="" target="fm">首页</a></li>
+
+          <li class="layui-nav-item ">
+            <a class="" href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                style="font-size: 20px; color: #1E9FFF;"></i> 图书列表</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item">
+            <a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                style="font-size: 20px; color: #1E9FFF;"></i> 个人中心</a>
+            <dl class="layui-nav-child">
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+              <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"
+                    style="font-size: 20px; color: #1E9FFF;"></i> 你好啊</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+
+      <!-- 内容主体区域 -->
+      <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="layui-footer">
+      <!-- 底部固定区域 -->
+      I M Niu Bi
+    </div>
+  </div>
+  <!-- 引入jquery -->
+  <script src="/assets/lib/jquery.js"></script>
+  <!-- 引入layui的js -->
+  <script src="/assets/lib/layui/layui.all.js"></script>
+  <!-- 引入自己的js -->
+  <script src="/js/index.js"></script>
+
+  </script>
+</body>
+
+</html>
